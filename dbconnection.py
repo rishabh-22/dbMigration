@@ -4,8 +4,8 @@ import mysql.connector
 def get_connection():
     '''this functions establishes a connection to database'''
     try:
-        connection = mysql.connector.connect(host='127.0.0.1', user='root', password='root', database='dbproject')
+        connection = mysql.connector.connect(host='127.0.0.1', user='root', password='igdefault', database='db_migration')
         return connection
     except mysql.connector.Error as error:
-        print("Encountered error connecting to database. {}" .format(error))
+        print("Encountered error connecting to database. {}" .format(error))    
 

@@ -8,7 +8,7 @@ from dbconnection import get_connection
 def migrate_data():
     try:
         conn = get_connection()
-        cursor = conn.cursor
+        cursor = conn.cursor()
         select_query = 'SELECT * FROM imported_data'
         cursor.execute(select_query)
         data = cursor.fetchall()
